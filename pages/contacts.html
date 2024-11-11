@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TokyoTravel</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+	<body>
+		<header class="container">
+			<div class="header__wrap">
+				<div class="header__logo">
+					<img src="../img/logo.svg" alt="logo" class="header__logo_pic" />
+				</div>
+				<h1 class="header__logo_text">TokyoTravel</h1>
+				<div class="burger-menu" id="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="header__nav" id="nav-menu">
+					<ul class="header__links">
+						<li>
+							<a href="../pages/contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="main__cont__wrap">
+				<div class="main__cont_text">
+					<h1 class="main__cont_text-top-txt">Наши Контакты</h1>
+					<p class="main__cont_text-bot-txt">+7 (999) 999 99-99</p>
+					<p class="main__cont_text-bot-txt">Иванов И.И</p>
+				</div>
+				<div class="main__cont_modal_button">
+					<button id="main__cont_open-btn" class="main__cont_open-button">
+						Отправить заявку!
+					</button>
+				</div>
+				<div class="main__cont_modal" id="main__cont_my_modal">
+					<div class="main__cont_modal_box">
+						<button id="main__cont_modal_close_my_modal_btn">
+							<img
+								src="../img/krest.svg"
+								alt="icon"
+								class="main__cont_close_modal_btn"
+							/>
+						</button>
+						<h2>Отправить заявку</h2>
+            <form class="main__cont_modal_form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" class='main__cont_modal_form_textarea'></textarea>
+                <button type="submit" class='main__cont_modal_form_btn'>Отправить</button>
+            </form>
+        </div>
+
+					</div>
+				</div>
+			</div>
+      <script defer src="../js/modal.js"></script>
+			<script defer src="../js/burger.js"></script>
+			
+		</main>
+		<footer class="container">
+			<p>&copy; 2023 TokyoTravel. Все права защищены.</p>
+		</footer>
+	</body>
+</html>
