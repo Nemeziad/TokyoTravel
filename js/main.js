@@ -27,20 +27,13 @@ searchInput.addEventListener('input', (e) =>
 	})
 )
 
-document.getElementById('main__cont_open-btn')
-document.addEventListener('click', function () {
+const openModalBtn = document.getElementById('main__cont_open-btn')
+openModalBtn.addEventListener('click', function () {
 	document.getElementById('main__cont_my_modal').classList.add('open')
 })
-
-document.getElementById('main__cont_modal_close_my_modal_btn')
-document.addEventListener('click', function () {
+const closeModalBtn = document.getElementById(
+	'main__cont_modal_close_my_modal_btn'
+)
+closeModalBtn.addEventListener('click', function () {
 	document.getElementById('main__cont_my_modal').classList.remove('open')
 })
-
-// // heroImage.innerHTML = ''
-// // const images = document.createElement('div')
-// // images.classList.add('hero__image')
-// // images.innerHTML = `
-// // <img src="../img/imperator_house.jpg" alt="hero-image-1">
-// // `
-// // heroImage.appendChild(images)
