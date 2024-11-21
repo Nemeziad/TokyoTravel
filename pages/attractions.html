@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TokyoTravel</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+	<body>
+		<header class="container">
+			<div class="header__wrap">
+				<div class="header__logo">
+					<a href="/index.html"
+						><img src="../img/logo.svg" alt="logo" class="header__logo_pic"
+					/></a>
+				</div>
+				<h1 class="header__logo_text">TokyoTravel</h1>
+				<div class="burger-menu" id="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="header__nav" id="nav-menu">
+					<ul class="header__links">
+						<li>
+							<a href="./contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<div class="main__wrap">
+					<h1 class="main__top_text">Наши достопримечательности!</h1>
+					<div class="search-bar">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Поиск достопримечательностей..."
+						/>
+					</div>
+					<div class="main__boxes">
+						<div class="main__box card">
+							<img
+								src="../img/imperator_house.jpg"
+								alt="img"
+								class="main__pic"
+							/>
+							<div class="main__content">
+								<h2 class="main__text">Храм императора</h2>
+								<p class="main__bot-text">
+									Хотите узнать, кем является император для жителей Японии?
+									Посмотрите главную достопримечательность Токио и символ
+									японской государственности — резиденцию и парки верховного
+									правителя страны. Узнайте историю Императорского дворца.
+								</p>
+								<a href="./imperator.html">
+									<button class="main__button">Перейти!</button>
+								</a>
+							</div>
+						</div>
+						<div class="main__box card">
+							<img src="../img/tokyo_museum.jpg" alt="img" class="main__pic" />
+							<div class="main__content">
+								<h2 class="main__text">Токийский национальный музей</h2>
+								<p class="main__bot-text">
+									Историю и культуру эпохи Эдо можно наглядно проследить в
+									районах Уэно и Асакуса. Просторный парк Уэно – это прекрасное
+									место, где можно не только отдохнуть, но и посетить множество
+									различных музеев и галерей. Прямо от станции "Уэно" начинается
+									знаменитая торговая улица Амейоко.
+								</p>
+								<a href="./museum.html">
+									<button class="main__button">Перейти!</button>
+								</a>
+							</div>
+						</div>
+						<div class="main__box card">
+							<img src="../img/lakva.jpg" alt="img" class="main__pic" />
+							<div class="main__content">
+								<h2 class="main__text">Аквапарк ЛаКва</h2>
+								<p class="main__bot-text">
+									Йоцуя и Ийдабаси – это территории, которые зародились и
+									развивались на противоположном берегу рва, защищавшего
+									императорский дворец. Расположившийся по соседству Кагурадзака
+									– это старинный район красных фонарей с живописными пейзажами,
+									возрождающими атмосферу древнего Токио.
+								</p>
+								<a href="./lakva.html">
+									<button class="main__button">Перейти!</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script defer src="../js/burger.js"></script>
+		<script defer src="../js/search.js"></script>
+	</body>
+</html>

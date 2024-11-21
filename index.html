@@ -16,7 +16,9 @@
 		<header class="container">
 			<div class="header__wrap">
 				<div class="header__logo">
-					<img src="./img/logo.svg" alt="logo" class="header__logo_pic" />
+					<a href="/index.html"
+						><img src="img/logo.svg" alt="logo" class="header__logo_pic"
+					/></a>
 				</div>
 				<h1 class="header__logo_text">TokyoTravel</h1>
 				<div class="burger-menu" id="burger-menu">
@@ -28,6 +30,15 @@
 					<ul class="header__links">
 						<li>
 							<a href="./pages/contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header__nav" id="nav-menu">
+					<ul class="header__links">
+						<li>
+							<a href="./pages/attractions.html" class="header__link"
+								>Достопримечательности</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -43,7 +54,7 @@
 						Токио - город, который никогда не спит. Это перекресток традиций и
 						современных технологий, где небоскребы соседствуют с древними
 						храмами, а уличные торговцы предлагают как свежайшие суши, так и
-						последнюю модель смартфона.
+						последнюю в модель смартфона.
 					</p>
 				</div>
 				<div class="hero__image">
@@ -51,7 +62,6 @@
 				</div>
 				<script src="./js/border.js"></script>
 			</section>
-			<div class="map-widget-txt"></div>
 			<div class="map-widget">
 				<iframe
 					src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae1e786ffad5ec417b9ffe66411ffc49ab071956c13557c40212e2ced05712ff4&amp;source=constructor"
@@ -60,73 +70,6 @@
 					frameborder="0"
 				></iframe>
 			</div>
-			<section class="container">
-				<div class="main__wrap">
-					<h1 class="main__top_text">Наши достопримечательности!</h1>
-					<div class="search-bar">
-						<input
-							type="text"
-							id="search-input"
-							placeholder="Поиск достопримечательностей..."
-						/>
-					</div>
-					<div class="main__boxes">
-						<div class="main__box card">
-							<img
-								src="./img/imperator_house.jpg"
-								alt="img"
-								class="main__pic"
-							/>
-							<div class="main__content">
-								<h1 class="main__text">Храм императора</h1>
-								<p class="main__bot-text">
-									Хотите узнать, кем является император для жителей Японии?
-									Посмотрите главную достопримечательность Токио и символ
-									японской государственности — резиденцию и парки верховного
-									правителя страны. Узнайте историю Императорского дворца.
-								</p>
-								<a href="./pages/imperator.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
-						<div class="main__box card">
-							<img src="./img/tokyo_museum.jpg" alt="img" class="main__pic" />
-							<div class="main__content">
-								<h1 class="main__text">Токийский национальный музей</h1>
-								<p class="main__bot-text">
-									Историю и культуру эпохи Эдо можно наглядно проследить в
-									районах Уэно и Асакуса. Просторный парк Уэно – это прекрасное
-									место, где можно не только отдохнуть, но и посетить множество
-									различных музеев и галерей. Прямо от станции "Уэно" начинается
-									знаменитая торговая улица Амейоко, на которой магазины одежды
-									теснятся по соседству с бесчисленными рыбными и бакалейными
-									лавками.
-								</p>
-								<a href="./pages/museum.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
-						<div class="main__box card">
-							<img src="./img/lakva.jpg" alt="img" class="main__pic" />
-							<div class="main__content">
-								<h1 class="main__text">Аквапарк ЛаКва</h1>
-								<p class="main__bot-text">
-									Йоцуя и Ийдабаси – это территории, которые зародились и
-									развивались на противоположном берегу рва, защищавшего
-									императорский дворец. Расположившийся по соседству Кагурадзака
-									– это старинный район красных фонарей с живописными пейзажами,
-									возрождающими атмосферу древнего Токио.
-								</p>
-								<a href="./pages/lakva.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 		</main>
 		<footer class="container">
 			<p>&copy; 2023 TokyoTravel. Все права защищены.</p>
