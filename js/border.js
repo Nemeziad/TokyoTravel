@@ -1,9 +1,5 @@
 const heroImage = document.querySelector('.hero__image img')
-const images = [
-	'../img/tokyo2.jpg.jpg',
-	'../img/sensoji_japan.jpg',
-	'../img/tokyo1.jpg',
-]
+const images = ['../img/tokyo1.jpg', '../img/tokyo2.jpg', '../img/tokyo3.jpg']
 let currentImageIndex = 0
 
 function changeImage() {
@@ -11,4 +7,4 @@ function changeImage() {
 	currentImageIndex = (currentImageIndex + 1) % images.length
 }
 
-setInterval(changeImage, 2500)
+setInterval(changeImage, 3500)
