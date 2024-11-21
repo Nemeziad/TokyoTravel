@@ -1,5 +1,9 @@
 const heroImage = document.querySelector('.hero__image img')
-const images = ['../img/tokyo1.jpg', '../img/tokyo2.jpg', '../img/tokyo3.jpg']
+const images = [
+	'../img/imperator_house.jpg',
+	'../img/sensoji_japan.jpg',
+	'../img/tokyo_museum.jpg',
+]
 let currentImageIndex = 0
 
 function changeImage() {
