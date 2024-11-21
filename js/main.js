@@ -2,8 +2,8 @@ fetch('https://6731b0237aaf2a9aff119400.mockapi.io/api/v1/lolq')
 const heroImage = document.querySelector('.hero__image img')
 const images = [
 	'img/tokyo1.jpg',
-	'img/tokyo2.jpg',
-	'img/tokyo3.jpg',
+	'img/imperator_house.jpg',
+	'img/tokyo_museum.jpg',
 ]
 let currentImageIndex = 0
 
