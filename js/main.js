@@ -17,25 +17,25 @@ changeImage()
 setInterval(changeImage, 3000)
 const searchInput = document.getElementById('search-input')
 
-// searchInput.addEventListener('input', (e) =>
-// 	[...document.querySelectorAll('.card')].forEach((item) => {
-// 		if (item.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
-// 			item.style.display = 'flex'
-// 		} else {
-// 			item.style.display = 'none'
-// 		}
-// 	})
-// )
+searchInput.addEventListener('input', (e) =>
+	[...document.querySelectorAll('.card')].forEach((item) => {
+		if (item.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
+			item.style.display = 'flex'
+		} else {
+			item.style.display = 'none'
+		}
+	})
+)
 
-// document.getElementById('main__cont_open-btn')
-// document.addEventListener('click', function () {
-// 	document.getElementById('main__cont_my_modal').classList.add('open')
-// })
+document.getElementById('main__cont_open-btn')
+document.addEventListener('click', function () {
+	document.getElementById('main__cont_my_modal').classList.add('open')
+})
 
-// document.getElementById('main__cont_modal_close_my_modal_btn')
-// document.addEventListener('click', function () {
-// 	document.getElementById('main__cont_my_modal').classList.remove('open')
-// })
+document.getElementById('main__cont_modal_close_my_modal_btn')
+document.addEventListener('click', function () {
+	document.getElementById('main__cont_my_modal').classList.remove('open')
+})
 
 // // heroImage.innerHTML = ''
 // // const images = document.createElement('div')
