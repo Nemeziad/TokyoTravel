@@ -1,4 +1,4 @@
-fetch('https://6731b0237aaf2a9aff119400.mockapi.io/api/v1/lolq')
+const api = fetch('https://6731b0237aaf2a9aff119400.mockapi.io/api/v1/lol')
 const heroImage = document.querySelector('.hero__image img')
 const images = [
 	'img/tokyo1.jpg',
