@@ -108,7 +108,6 @@ body {
   .header__links li {
     display: flex;
     gap: 30px;
-    margin: 10px 0;
   }
 }
 .header__links a {
