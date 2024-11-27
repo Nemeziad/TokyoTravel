@@ -49,61 +49,21 @@
 							placeholder="Поиск достопримечательностей..."
 						/>
 					</div>
-					<div class="main__boxes">
-						<div class="main__box card">
-							<img
-								src="../img/imperator_house.jpg"
-								alt="img"
-								class="main__pic"
-							/>
-							<div class="main__content">
-								<h2 class="main__text">Храм императора</h2>
-								<p class="main__bot-text">
-									Хотите узнать, кем является император для жителей Японии?
-									Посмотрите главную достопримечательность Токио и символ
-									японской государственности — резиденцию и парки верховного
-									правителя страны. Узнайте историю Императорского дворца.
-								</p>
-								<a href="./imperator.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
-						<div class="main__box card">
-							<img src="../img/tokyo_museum.jpg" alt="img" class="main__pic" />
-							<div class="main__content">
-								<h2 class="main__text">Токийский национальный музей</h2>
-								<p class="main__bot-text">
-									Историю и культуру эпохи Эдо можно наглядно проследить в
-									районах Уэно и Асакуса. Просторный парк Уэно – это прекрасное
-									место, где можно не только отдохнуть, но и посетить множество
-									различных музеев и галерей. Прямо от станции "Уэно" начинается
-									знаменитая торговая улица Амейоко.
-								</p>
-								<a href="./museum.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
-						<div class="main__box card">
-							<img src="../img/lakva.jpg" alt="img" class="main__pic" />
-							<div class="main__content">
-								<h2 class="main__text">Аквапарк ЛаКва</h2>
-								<p class="main__bot-text">
-									Йоцуя и Ийдабаси – это территории, которые зародились и
-									развивались на противоположном берегу рва, защищавшего
-									императорский дворец. Расположившийся по соседству Кагурадзака
-									– это старинный район красных фонарей с живописными пейзажами,
-									возрождающими атмосферу древнего Токио.
-								</p>
-								<a href="./lakva.html">
-									<button class="main__button">Перейти!</button>
-								</a>
-							</div>
-						</div>
+					<div id="cards" class="cards">
+						<!--тут карточки будут-->
 					</div>
-				</div>
 			</section>
+      <div id="attraction-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2 id="modal-title"></h2>
+          <img id="modal-image" src="" alt="">
+          <p id="modal-description">Храм Императора, также известный как Токё-дзи, является одним из самых важных и почитаемых святилищ в Японии. Расположенный в центре Токио, он служит местом поклонения императорам Японии и их духам. Храм был построен в 1869 году и с тех пор стал символом национальной идентичности и культурного наследия. Его величественные ворота и роскошные сады привлекают тысячи туристов и верующих ежегодно.</p>
+        </div>
+      </div>
+      <footer class="container">
+        <p>&copy; 2023 TokyoTravel. Все права защищены.</p>
+      </footer>
 		</main>
 		<script defer src="../js/main.js"></script>
 	</body>

@@ -112,7 +112,6 @@ body {
 			li {
 				display: flex;
 				gap: 30px;
-				margin: 10px 0;
 			}
 		}
 	}
@@ -193,7 +192,7 @@ body {
 			width: 600px;
 			height: 500px;
 			@media (max-width: 630px) {
-				width: 250px;
+				width: 450px;
 			}
 		}
 	}
@@ -378,10 +377,11 @@ body {
 		}
 	}
 	&__top_text {
+		justify-content: center;
 		font-size: 48px;
 		display: flex;
-		@media (max-width: 320px) {
-			font-size: 20px;
+		@media (max-width: 720px) {
+			font-size: 30px;
 		}
 	}
 	&__text {
@@ -401,6 +401,56 @@ body {
 		}
 	}
 }
+
+// Базовые стили для контейнера карточек
+#cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+}
+
+// Стили для каждой карточки
+.cards {
+	& > div {
+		background-color: #f9f9f9;
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		padding: 20px;
+		width: 300px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	// Стили для заголовка карточки
+	h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+		color: #333;
+	}
+
+	// Стили для описания карточки
+	p {
+		font-size: 16px;
+		color: #666;
+		margin-bottom: 20px;
+	}
+
+	// Стили для изображения карточки
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		margin-bottom: 15px;
+	}
+}
+
 .footer {
 	position: relative;
 	text-align: center;
