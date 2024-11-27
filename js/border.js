@@ -1,8 +1,8 @@
 const heroImage = document.querySelector('.hero__image img')
 const images = [
-	'/img/imperator_house.jpg',
-	'/img/sensoji_japan.jpg',
-	'/img/tokyo_museum.jpg',
+	'img/imperator_house.jpg',
+	'img/sensoji_japan.jpg',
+	'img/tokyo_museum.jpg',
 ]
 let currentImageIndex = 0
 
