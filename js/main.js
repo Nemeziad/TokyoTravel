@@ -1,6 +1,6 @@
 let card = []
 let currentPage = 1
-const cardsPerPage = 3
+const cardsPerPage = 4
 
 fetch('https://6731b0237aaf2a9aff119400.mockapi.io/api/v1/lol')
 	.then((response) => {
@@ -71,3 +71,20 @@ function showModal(item) {
 		}
 	}
 }
+function filterCards(cards, query) {
+	return cards.filter((item) => {
+		return (
+			item.title.toLowerCase().includes(query.toLowerCase()) ||
+			item.description.toLowerCase().includes(query.toLowerCase())
+		)
+	})
+}
+
+const searchInput = document.getElementById('search-input')
+searchInput.addEventListener('input', (e) => {
+	const query = e.target.value
+	const filteredCards = filterCards(card, query)
+	currentPage = 1
+	displayCards(filteredCards, currentPage)
+	setupPagination(filteredCards)
+})
